@@ -3,8 +3,10 @@ CPP_FLAGS = -Wall -Werror -Wextra
 
 SRCS =	main.cpp \
 		FileSelecter.cpp \
+		KoreanTextReader.cpp \
 
-HEADR =  TextAnalyzer.hpp \
+HEADR = TextAnalyzer.hpp \
+		KoreanTextReader.hpp \
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -30,4 +32,3 @@ re:
 	make all
 
 .PHONY: all clean fclean re
- 
