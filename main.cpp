@@ -21,14 +21,11 @@ void initConsole()
 int	main(void)
 {
 	std::string 		FileName = SelectFile();
-    KoreanTextReader	reader;
+	KoreanTextReader	reader;
 
     reader.openFile(FileName);
-    std::vector<std::string> output = reader.readAllLines();
-    
-    for (std::vector<std::string>::size_type i = 0; i < output.size(); i++)
-    { 
-        std::cout << "txt 의 " << i + 1 << " 번째 원소 :: " << output[i] << std::endl;
-    }
+    std::vector<std::string>	output	=	reader.readAllLines();
+    std::unordered_map			freq	=	WordFreq(output);
+	SaveFreqToCsv(freq, "Freq.csv");
 	return (0);
 }

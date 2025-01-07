@@ -4,6 +4,7 @@ CPP_FLAGS = -Wall -Werror -Wextra
 SRCS =	main.cpp \
 		FileSelecter.cpp \
 		KoreanTextReader.cpp \
+		WordFreq.cpp
 
 HEADR = TextAnalyzer.hpp \
 		KoreanTextReader.hpp \

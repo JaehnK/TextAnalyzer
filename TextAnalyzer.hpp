@@ -8,6 +8,7 @@
 #include <sstream>
 #include <algorithm>
 #include <vector>
+#include <unordered_map>
 
 #ifdef _WIN32
     #include <windows.h>
@@ -24,21 +25,8 @@
 
 #include "KoreanTextReader.hpp"
 
-class	WordFreq
-{
-	private:
-		std::wstring	word;
-		int				freq;
-	
-	public:
-		WordFreq();
-		~WordFreq();
-
-		WordFreq(WordFreq &wf);
-		WordFreq operator = (const WordFreq& wf);
-
-};
-
-std::string SelectFile();
+std::string 							SelectFile();
+std::unordered_map<std::string, int>	WordFreq(std::vector<std::string> output);
+void 									SaveFreqToCsv(const std::unordered_map<std::string, int>& freq, const std::string& filename);
 
 #endif
