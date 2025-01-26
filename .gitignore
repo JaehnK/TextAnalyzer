@@ -1,11 +1,14 @@
-sample.txt
-*.sh
+# Directories
 Trash/
+**/build/
+dist/
 khaiii/
 .vscode/
 **/__pycache__/
-**/build/
-**/dist/
+
+# Files
+*.sh
 *.spec
 *.o
 *.so
+sample.txt
