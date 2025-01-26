@@ -19,8 +19,8 @@
 
 ## Installation
 ```bash
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/JaehnK/TextAnalyzer
+cd TextAnalyzer
 pip install -r requirements.txt
 ```
 
