@@ -3,5 +3,5 @@ sample.txt
 Trash/
 khaiii/
 .vscode/
-__pycache__/
-build/
+**/__pycache__/
+**/build/
