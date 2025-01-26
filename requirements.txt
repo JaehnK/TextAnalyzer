@@ -1,0 +1,6 @@
+altgraph @ file:///work/perseverance-python-buildout/croot/altgraph_1698866641409/work
+packaging @ file:///croot/packaging_1734472117206/work
+pyinstaller @ file:///croot/pyinstaller_1721682837002/work
+pyinstaller-hooks-contrib @ file:///croot/pyinstaller-hooks-contrib_1721675879691/work
+setuptools==75.1.0
+wheel==0.44.0
